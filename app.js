@@ -738,6 +738,7 @@
       '%': 'percent',
       x: '*',
       X: '*',
+      ',': '.',
     };
     const key = map[e.key] || e.key;
     if (

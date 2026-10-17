@@ -62,4 +62,4 @@ Static files, no build step.
 
 Deploy to Netlify with `netlify deploy --prod --dir .` from the project folder (it's linked to the Netlify site).
 
-To host it anywhere else, run `./build.sh` and upload the contents of `dist/` (including the hidden `.htaccess`) to the web root over SFTP. The site must be served over HTTPS for offline use and Add to Home Screen to work.
+To host it anywhere else, run `./build.sh` and upload the contents of `dist/` to the web root over SFTP. The site must be served over HTTPS for offline use and Add to Home Screen to work.
