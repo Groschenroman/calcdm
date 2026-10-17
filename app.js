@@ -101,10 +101,10 @@
   }
 
   // Number format: US "1,234.56" or European (DIN 5008) "1.234,56". The engine always uses
-  // "." internally; only the display changes. European is the default.
-  let euro = true;
+  // "." internally; only the display changes. US is the default.
+  let euro = false;
   try {
-    euro = localStorage.getItem(FORMAT_KEY) !== 'us';
+    euro = localStorage.getItem(FORMAT_KEY) === 'eu';
   } catch (e) {}
   function groupSep() {
     return euro ? '.' : ',';
